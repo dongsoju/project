@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="30">
+
+
+        <TextView
+            android:id="@+id/locname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="산의이름"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/filepath"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/dream03" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="주소"
+            android:textSize="80sp" />
+        <Button
+            android:id="@+id/course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="추천등산코스" />
+        <Button
+            android:id="@+id/danger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="위험정보" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="소개글" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="20"
+            android:background="#D1DDD5">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
